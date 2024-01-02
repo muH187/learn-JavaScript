@@ -18,3 +18,15 @@ function subtract(y, x) {
 }
 
 console.log(subtract(10, 5))
+
+function isValidEmail(email) {
+
+    if(email.includes("@")){
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isValidEmail("ali@gmail.com"))
+console.log(isValidEmail("ali.com"))
