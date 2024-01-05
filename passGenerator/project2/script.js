@@ -4,7 +4,7 @@ const includeLowercase = true
 const includeNumbers = true
 const includeSymbols = true
 
-function generatePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols) {
+function generatePassword(passwordLength, includeUppercase, includeLowercase, includeNumbers, includeSymbols) {
     
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
@@ -19,14 +19,14 @@ function generatePassword(length, includeUppercase, includeLowercase, includeNum
     allowedChars += includeNumbers ? numberChars : ""
     allowedChars += includeSymbols ? symbolChars : ""
 
-    if(length <= 0) {
+    if(passwordLength <= 0) {
         return (`Password length must be 1`)
     }
     if(allowedChars.length === 0) {
         return (`At least 1 set of character needs to be selected`)
     }
 
-    for ( let i = 0; i < length; i++) {
+    for ( let i = 0; i < passwordLength; i++) {
         const randomIndex = Math.floor(Math.random() * allowedChars.length)
         password += allowedChars[randomIndex]
     }
