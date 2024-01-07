@@ -10,7 +10,7 @@ function answer() {
 
 setTimeout(answer, 4000)
 
-// Another way to write to a timeout function
+// Another way to write a timeout function
 
 setTimeout(() => {
     console.log("Hi I'm learning Javascript")
