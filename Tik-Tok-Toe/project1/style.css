@@ -9,26 +9,27 @@ body {
 }
 
 .container {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .game {
-    height: 60vmin;
+    height: 40vmin;
     width: 60vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
+    gap: 1vmin;
+    margin-bottom: 40px;
 }
 
 .box {
     font-size: 8vmin;
-    height: 18vh;
-    width: 18vh;
+    height: 15vh;
+    width: 15vh;
     background-color: rgb(236, 229, 216);
     color: hsl(0, 59%, 52%);
     border-radius: 1rem;
@@ -51,4 +52,18 @@ body {
     transform: scale(1.08);
     border-radius: 1rem;
     color: hsl(0, 2%, 20%);
+}
+
+.msg-container{
+    padding: 10px 0;
+}
+
+#msg{
+    font-size: 8vmin;
+    color: rgb(105, 100, 92);
+    margin-bottom: 15px;
+}
+
+.hide {
+    display: none;
 }
