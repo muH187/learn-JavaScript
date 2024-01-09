@@ -53,6 +53,22 @@ body {
     border-radius: 1rem;
     color: hsl(0, 2%, 20%);
 }
+#resetAll {
+    padding: 8px 15px;
+    font-size: 3.2vmin;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(173, 33%, 52%);
+    transition: 0.2s ease-in-out;
+}
+#resetAll:hover{
+    background-color: hsl(173, 62%, 65%);
+    transform: scale(1.08);
+    border-radius: 1rem;
+    color: hsl(0, 2%, 20%);
+}
 
 .msg-container{
     padding: 10px 0;

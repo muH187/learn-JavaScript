@@ -1,5 +1,5 @@
 let boxes = document.querySelectorAll(".box")
-let resetGame = document.querySelector("#resetBtn")
+let resetAll = document.querySelector("#resetAll")
 let newGameBtn = document.querySelector("#resetBtn")
 let msg = document.querySelector("#msg")
 let msgContainer = document.querySelector(".msg-container")
@@ -72,4 +72,4 @@ const checkWinner = () => {
 }
 
 newGameBtn.addEventListener("click", resetGame)
-resetGame.addEventListener("click", resetGame)
+resetAll.addEventListener("click", resetGame)
