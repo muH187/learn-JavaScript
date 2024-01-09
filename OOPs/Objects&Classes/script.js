@@ -12,8 +12,11 @@ const employee = {
     }
 }
 
-const zohaib = {
-    salary: 50000
+let zohaib = {
+    salary: 50000,
+    calcTax() {
+        console.log("Tax rate is 20%");
+    }
 }
 
 zohaib.__proto__ = employee
