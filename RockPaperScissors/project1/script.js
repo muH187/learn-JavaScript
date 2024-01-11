@@ -29,7 +29,7 @@ function showWin(userWin, userChoice, compChoice) {
     } else {
         compScore++
         compScorePara.textContent = compScore
-        msg.textContent = `You lose! ${userChoice} beats your ${compChoice}`
+        msg.textContent = `You lose! ${compChoice} beats your ${userChoice}`
         msg.style.backgroundColor = "red"
     }
 }
