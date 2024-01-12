@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Montserrat&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 1rem;
+}
+
+.todo_app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+
+.todo_app h1 {
+    display: flex;
+    align-items: center;
+    color: #503C3C;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.todo_app img {
+    width: 30px;
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 1.31rem;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-weight: 14px;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: #A87C7C;
+    color: #fff;
+    padding: 13px 40px;
+    border-radius: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ul li {
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: ' ';
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    border-radius: 50%;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
