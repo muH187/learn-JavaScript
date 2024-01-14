@@ -11,7 +11,7 @@ while(running){
     guess = Number(guess)
 
     if(isNaN(guess)){
-        window.alert("Please Enter a valid number")
+        window.alert("Please Enter a number")
     } else if(guess < minNum || guess > maxNum){
         window.alert("Please Enter a valid number")
     } else {
