@@ -48,11 +48,27 @@ console.log(`The factorial of ${number}: ${factorial}`);
 // Print Array Elements:
 // Iterate through an array [1, 2, 3, 4, 5] and print each element using a for loop.
 
+let arr = [1, 2, 3, 4, 5]
+for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
 // Square Numbers:
 // Print the squares of numbers from 1 to 5 using a for loop.
 
+let square = [1, 2, 3, 4, 5]
+for (i = 0; i < square.length; i++) {
+    console.log(square[i]* square[i]);
+}
+
 // Count Vowels:
 // Count the number of vowels in a given string using a for loop.
+
+let vowels = ["a", "e", "i", "o", "u"]
+let stringVowels = "Hello World"
+for (i = 0; i < vowels.length; i++) {
+    
+}
 
 // Power of Two:
 // Print the powers of 2 from 2^1 to 2^5 using a for loop.
