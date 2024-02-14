@@ -20,7 +20,7 @@ listContainer.addEventListener("click", (e) => {
 }, false)
 
 btn.addEventListener("click", () => {
-    if(inbox === ""){
+    if(inbox.value === ""){
         window.alert("You must write something!")
     } else {
         let li = document.createElement("li")
