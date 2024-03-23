@@ -23,3 +23,10 @@ const subraction = (a, b) => a - b
 const subResult = calculate(8, 3, subraction)
 
 console.log(subResult);
+
+// Method 3:
+function multiply(a, b) {
+    return a*b
+}
+const multiResult = calculate(20, 5, multiply)
+console.log(multiResult);
