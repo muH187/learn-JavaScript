@@ -57,5 +57,7 @@ getCheese()
         console.log("Here is your pizza", pizza);
     })
     .catch((data) => {
-    console.log("Error Occured", data);
-})
+        console.log("Error Occured", data);
+    }).finally(() => {
+        console.log("Process Ended");
+    })
