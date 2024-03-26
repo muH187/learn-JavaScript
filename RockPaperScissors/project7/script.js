@@ -1,7 +1,7 @@
 const choices = document.querySelectorAll(".choice")
-const userScorePara = document.querySelector("#user_score")
-const computerScorePara = document.querySelector("#computer_score")
-const msg = document.querySelector("#msg")
+const userScorePara = document.getElementById("user_score")
+const compScorePara = document.getElementById("computer_score")
+const msg = document.getElementById("msg")
 
 let userScore = 0
 let compScore = 0
@@ -13,31 +13,32 @@ const getCompChoice = () => {
 }
 
 const drawGame = () => {
-    msg.textContent = "It's Draw! Play Again."
-    msg.style.backgroundColor = "#365486"
+    msg.textContent = "Game Draw! Play Again."
+    msg.style.backgroundColor = "black"
 }
 
 const showWin = (userWin, userChoice, compChoice) => {
-    if(userWin) {
+    if (userWin) {
         userScore++
-        userScorePara.textContent = userScore
-        msg.textContent = `You Win! Your ${userChoice} beats ${compChoice}`
+        msg.textContent = `You Win! Your ${userChoice} beat ${compChoice}`
         msg.style.backgroundColor = "green"
+        userScorePara.textContent = userScore
+
     } else {
         compScore++
-        computerScorePara.textContent = compScore
-        msg.textContent = `You Lost! ${compChoice} beats your ${userChoice}`
+        msg.textContent = `You Lose! ${compChoice} beat your ${userChoice}`
         msg.style.backgroundColor = "red"
+        compScorePara.textContent = compScore
     }
 }
 
 const playGame = (userChoice) => {
     const compChoice = getCompChoice()
-    if (userChoice === compChoice) {
+    if( userChoice === compChoice) {
         drawGame()
-    } else {
+    } else{
         let userWin = true
-        if(userChoice === "rock") {
+        if (userChoice === "rock") {
             userWin = compChoice === "paper" ? false : true
         } else if (userChoice === "paper") {
             userWin = compChoice === "scissors" ? false : true
@@ -46,7 +47,6 @@ const playGame = (userChoice) => {
         }
         showWin(userWin, userChoice, compChoice)
     }
-    
 }
 
 choices.forEach((choice) => {
@@ -55,4 +55,3 @@ choices.forEach((choice) => {
         playGame(userChoice)
     })
 })
-
