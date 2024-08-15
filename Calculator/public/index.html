@@ -7,30 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container bg-slate-200 max-w-full h-screen flex justify-center items-center">
-        <div class="calculator bg-[#000000] w-[16rem] h-[32rem] rounded-3xl relative">
-            <div id="display" class="text-white text-3xl text-right p-3"></div>
+    <div class="container max-w-full h-screen flex justify-center items-center">
+        <div class="calculator bg-[#000000] w-[16rem] h-[32rem] rounded-3xl relative shadow-2x text-center">
+            <h1 class="text-white text-[1.8rem] mt-4 font-mono">Calculator</h1>
+            <div id="display" class="text-white text-[2.2rem] text-right p-3 absolute bottom-80 right-0"></div>
             <div class="buttons flex flex-wrap justify-center gap-3 absolute bottom-4">
                 <button onclick="removeLast()" class="bg-[#A5A5A5] text-black text-lg w-12 h-12 rounded-full">C</button>
                 <button onclick="del()" class="bg-[#A5A5A5] text-black text-lg w-12 h-12 rounded-full">DEL</button>
-                <button class="bg-[#A5A5A5] text-black text-lg w-12 h-12 rounded-full">%</button>
-                <button class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">÷</button>
+                <button onclick="operator('%')" class="bg-[#A5A5A5] text-black text-lg w-12 h-12 rounded-full">%</button>
+                <button onclick="operator('/')" class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">÷</button>
                 <button onclick="appendNumber('7')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">7</button>
                 <button onclick="appendNumber('8')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">8</button>
                 <button onclick="appendNumber('9')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">9</button>
-                <button class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">×</button>
+                <button onclick="operator('*')" class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">×</button>
                 <button onclick="appendNumber('4')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">4</button>
                 <button onclick="appendNumber('5')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">5</button>
                 <button onclick="appendNumber('6')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">6</button>
-                <button class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">−</button>
+                <button onclick="operator('-')" class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">−</button>
                 <button onclick="appendNumber('1')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">1</button>
                 <button onclick="appendNumber('2')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">2</button>
                 <button onclick="appendNumber('3')" class="bg-[#333333] text-white text-lg w-12 h-12 rounded-full">3</button>
-                <button class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">+</button>
-                <button class="bg-[#333333] text-white text-lg w-28 h-12 rounded-full text-left pl-6">0</button>
-                <button class="bg-[#333333] text-white text-3xl w-12 h-12 rounded-full">.</button>
-                <button class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">=</button>
-
+                <button onclick="operator('+')" class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">+</button>
+                <button onclick="appendNumber('0')" class="bg-[#333333] text-white text-lg w-28 h-12 rounded-full text-left pl-6">0</button>
+                <button onclick="appendNumber('.')" class="bg-[#333333] text-white text-3xl w-12 h-12 rounded-full">.</button>
+                <button onclick="equal()" class="bg-[#FF9F0A] text-white text-3xl w-12 h-12 rounded-full">=</button>
             </div>
         </div>
     </div>
