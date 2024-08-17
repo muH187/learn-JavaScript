@@ -8,12 +8,34 @@
 </head>
 <body>
     <div class="container relative">
-        <div class="rps absolute left-[35%]">
-            <h1 class="text-4xl mt-5 font-mono ">Rock - Paper - Scissors</h1>
-            <div class="icons flex">
-                <div class="iconOne">😊 😏 😍</div>
+        <div class="rps absolute left-[35%] flex flex-col justify-center items-center">
+            <h1 class="text-4xl my-5 ml-5 font-mono ">Rock - Paper - Scissors</h1>
+            <div class="icons flex gap-10 mt-14">
+                <button onclick="playGame()" id="rock" class="iconOne text-8xl">👊</button>
+                <button onclick="playGame()" id="paper" class="iconTwo text-8xl">✋</button>
+                <button onclick="playGame()" id="scissors" class="iconThree text-8xl">✌</button>
+            </div>
+            <div class="whoChoose mt-14">
+                <h1 class="text-2xl mb-3">You: <span id="displayUser" class="ml-3">Rock</span></h1>
+                <h1 class="text-2xl">Comp: <span id="displayComp" class="ml-3">Scissors</span></h1>
+            </div>
+            <div class="showWin text-2xl my-8">
+                <h1>You Win</h1>
+            </div>
+            <div class="scoreBoard flex gap-10 text-xl">
+                <div class="userScore text-center">
+                    <h1>Your Score:</h1>
+                    <p>score</p>
+                </div>
+                <div class="computerScore text-center">
+                    <h1>Computer Score:</h1>
+                    <p>score</p>
+                </div>
+                
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
