@@ -1,10 +1,12 @@
-const rock = document.getElementById("rock")
-const paper = document.getElementById("paper")
-const scissors = document.getElementById("scissors")
-const displayUser = document.getElementById("displayUser")
-const displayComp = document.getElementById("displayComp")
+const playerDisplay = document.getElementById("playerDisplay")
+const compDisplay = document.getElementById("compDisplay")
+const resultDisplay = document.getElementById("resultDisplay")
+const userScoreDisplay = document.getElementById("userScoreDisplay")
+const compScoreDisplay = document.getElementById("compScoreDisplay")
 
-let userChoice = ""
+let result = ""
+let userScore = 0
+let compScore = 0
 
 const options = ['rock', 'paper', 'scissors']
 
@@ -20,6 +22,24 @@ function playGame(userChoice) {
 
     const compChoice = getComputerChoice()
     if(userChoice === compChoice){
-        console.log("It's a tie")
+        result = "It's a tie!"
+        resultDisplay.style.color = "black"
+    } else {
+        if(userChoice === "rock" && compChoice === "scissors" || userChoice === "paper" && compChoice === "rock" || userChoice === "scissors" && compChoice === "paper") {
+            result = "You Win"
+            resultDisplay.style.color = "green"
+            userScore += 1
+        } else{
+            result = "You Lose"
+            resultDisplay.style.color = "red"
+            compScore += 1
+        }
     }
+     
+    playerDisplay.textContent = `${userChoice}`
+    compDisplay.textContent = `${compChoice}`
+    resultDisplay.textContent = result
+
+    userScoreDisplay.textContent = userScore
+    compScoreDisplay.textContent = compScore
 }
