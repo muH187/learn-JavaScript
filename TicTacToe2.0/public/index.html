@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <div id="gameContainer">
-        <h1>Tic Tac Toe</h1>
-        <div id="cellContainer" class="grid grid-cols-3">
-            <div cellIndex="0" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="1" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="2" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="3" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="4" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="5" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="6" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="7" class="cell border-2 border-black w-52 h-48"></div>
-            <div cellIndex="8" class="cell border-2 border-black w-52 h-48"></div>
+    <div id="gameContainer" class="text-center">
+        <h1 class="text-4xl font-semibold my-7">Tic Tac Toe</h1>
+        <div id="cellContainer" class="grid grid-cols-3 w-[620px] m-auto">
+            <div cellIndex="0" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="1" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="2" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="3" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="4" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="5" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="6" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="7" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
+            <div cellIndex="8" class="cell border-2 border-black w-52 h-48 pt-16 text-5xl cursor-pointer"></div>
         </div>
-        <h2 class="statusText"></h2>
-        <button>Reset</button>
+        <h2 class="statusText text-3xl my-3"></h2>
+        <button id="restartBtn" onclick="restartGame()" class="bg-slate-600 text-white rounded-md py-2 px-3 my-2 text-2xl shadow-2xl">Restart</button>
     </div>
 
     <script src="script.js"></script>
