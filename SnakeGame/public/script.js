@@ -48,13 +48,11 @@ function gameEngine(){
     })
 
     // Food
-    snakeArr.forEach((e, index)=> {
         foodElement = document.createElement('div')
         foodElement.style.gridRowStart = food.y;
         foodElement.style.gridColumnStart = food.x;
         foodElement.classList.add("bg-yellow-600")
         board.appendChild(foodElement)
-    })
 }
 
 
