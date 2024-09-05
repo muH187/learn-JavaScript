@@ -63,3 +63,38 @@ console.log(mulitplyArray) // [ 10, 18, 28 ]
 const minutes = [60, 120, 180, 240];
 const hours = minutes.map(num => num / 60)
 console.log(hours) // [ 1, 2, 3, 4 ]
+
+
+// Square Root of Numbers in an Array
+{
+    const numbers = [4, 9, 16, 25];
+    const squareRoot = numbers.map(num => Math.sqrt(num))
+    console.log(squareRoot) // [ 2, 3, 4, 5 ]
+}
+
+// Flatten an Array of Arrays
+const nestedArray = [[1, 2], [3, 4], [5, 6]];
+let flattenArray = []
+nestedArray.map(subArray => {
+    flattenArray = flattenArray.concat(subArray)
+})
+console.log(flattenArray)
+
+// Convert Object Keys into an Array
+const people = [
+    { name: 'Alice', age: 30 },
+    { name: 'Bob', age: 25 }
+  ]
+const keyObj = people.map(item => `Key: ${item.name}, value: ${item.age}`)
+console.log(keyObj)
+
+// Find Objects by Key
+const books = [
+    { title: 'Book 1', author: 'Author A', rating: 3.8 },
+    { title: 'Book 2', author: 'Author B', rating: 4.5 },
+    { title: 'Book 3', author: 'Author C', rating: 4.0 }
+  ]
+const findBook = books.map(book => {
+    if(book.rating >= 4) return `Book ${book.title}`
+})
+console.log(findBook)
