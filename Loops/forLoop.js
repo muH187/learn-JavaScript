@@ -1,7 +1,7 @@
 let sum = 0; // Initialize the sum to 0
 
 for (let i = 1; i <= 100; i++) {
-  sum += i; // Add the current number to the sum
+    sum += i; // Add the current number to the sum
 }
 
 console.log("The sum of numbers from 1 to 100 is:", sum);
@@ -45,14 +45,26 @@ console.log(count)
     for (let i = 0; i < fruits.length; i++) {
         console.log(fruits[i])
     }
-    
+
 }
 {
     for (let i = 1; i <= 3; i++) {
-        
+
         for (let j = 1; j <= 3; j++) {
             console.log(`i = ${i}, j = ${j}`)
         }
 
     }
+}
+{
+    for (let i = 1; i < 6; i++) {
+        let pattern = ""
+        
+        for (j = 1; j < i; j++) {
+            pattern += "*"
+        }
+        console.log(pattern)
+
+    }
+    
 }
