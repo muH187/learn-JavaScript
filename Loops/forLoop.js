@@ -68,3 +68,16 @@ console.log(count)
     }
     
 }
+console.log("reverse stars")
+{
+    for (let i = 6; i > 0; i--) {
+        let pattern = ""
+        
+        for (j = i; j > 0; j--) {
+            pattern += "*"
+        }
+        console.log(pattern)
+
+    }
+    
+}
