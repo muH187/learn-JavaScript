@@ -40,3 +40,10 @@ console.log(count)
     }
     console.log(reversed)
 }
+{
+    let fruits = ["Mango", "Banana", "Kivi", "Pineapple"]
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i])
+    }
+    
+}
