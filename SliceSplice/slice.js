@@ -20,6 +20,17 @@
 }
 {
     const array = [1, 2, 3, 4, 5, 6]
-    const newArray = array.slice(0, )
+    const newArray = array.slice(0)
+    console.log(newArray)
+}
+{
+    const array = [10, 20, 30, 40, 50]
+    console.log(array)
+    const newArray = array.slice(0, -3)
+    console.log(newArray)
+}
+{
+    const array = [10, 20, 30, 40, 50]
+    const newArray = array.slice()
     console.log(newArray)
 }
