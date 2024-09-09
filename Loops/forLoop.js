@@ -81,3 +81,25 @@ console.log("reverse stars")
     }
     
 }
+console.log("another loop")
+{
+    for (let i = 0; i < 6; i++) {
+        let pattern = ""
+        for (let j = 0; j < i; j++){
+            pattern += "*"
+        }
+        console.log(pattern)
+    }
+}
+console.log("reverse stars")
+{
+    for (let i = 6; i >= 0; i--) {
+        let pattern = ""
+        for (let j = 0; j < i; j++){
+            pattern += "*"
+        }
+        console.log(pattern)
+    }
+}
+console.log("practicing")
+
