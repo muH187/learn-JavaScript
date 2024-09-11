@@ -134,3 +134,18 @@
     console.log(fizzBuzz(5))
     console.log(fizzBuzz(15))
 }
+
+// Count Vowel:
+{
+    function countVowels(string) {
+        let vowels = ""
+        let vowelsList = "aeiouAEIOU"
+        for (let i = 0; i < string.length; i++) {
+            if(vowelsList.includes(string[i])) {
+                vowels += string[i]
+            }
+        }
+        return vowels.length
+    }
+    console.log(countVowels("Hello, My name is Muhammad Ali"))
+}
