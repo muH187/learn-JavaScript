@@ -80,3 +80,22 @@
     }
     console.log(reverseString("Hello"))
 }
+
+// Factorial of a number:
+{
+    function calFactorial(array) {
+        return array.reduce((total, num) => total * num)
+    }
+    let array = [1, 2, 3, 4]
+    console.log(calFactorial(array))
+    
+    // Dynamic Approach:
+    function factorial (n) {
+        let array = []
+        for (let i = 1; i <= n; i++){
+            array.push(i)
+        }
+        return array.reduce((total, next) => total * next, 1)
+    }
+    console.log(factorial(10))
+}
