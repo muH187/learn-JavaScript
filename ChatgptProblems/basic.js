@@ -24,3 +24,10 @@
     let array = [100, 400, 51, 399, 511, 20]
     console.log(largestNumber(array))
 }
+{
+    function largestNumber(array) {
+        return Math.max(...array)
+    }
+    let array = [12, 32, 64, 19, 94, 10]
+    console.log(largestNumber(array))
+}
