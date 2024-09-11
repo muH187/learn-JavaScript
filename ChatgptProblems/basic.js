@@ -52,3 +52,13 @@
     let array = [12, 32, 64, 19]
     console.log(largestNumber(array))
 }
+{
+    const array = [12, 32, 64, 13, 30, 4, 22]
+    let largest = array[0]
+    array.forEach(element => {
+        if(element > largest) {
+            largest = element
+        }
+    })
+    console.log(`Largest: ${largest}`)
+}
