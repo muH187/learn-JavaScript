@@ -31,3 +31,16 @@
     let array = [12, 32, 64, 19, 94, 10]
     console.log(largestNumber(array))
 }
+{
+    function largestNumber(array) {
+        let largest = array[0]
+        for (let i = 1; i < array.length; i++){
+            if(array[i] > largest) {
+                largest = array[i]
+            }
+        }
+        return largest
+    }
+    let array = [10, 20, 30, 14, 29, 33, 83]
+    console.log(largestNumber(array))
+}
