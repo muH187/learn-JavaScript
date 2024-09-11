@@ -164,3 +164,18 @@
     let element = "Pakistan"
     console.log(findIndex(array, element))
 }
+
+// Unique Array:
+{
+    function duplicateRemoved(array) {
+        let uniqueArray = []
+        for (let i = 0; i < array.length; i++) {
+            if(!uniqueArray.includes(array[i])) {
+                uniqueArray.push(array[i])
+            }
+        }
+        return uniqueArray
+    }
+    let array = ["Ali", "Ali", "Bilal", "Zohaib", "Yasir", "Yasir"]
+    console.log(duplicateRemoved(array))
+}
