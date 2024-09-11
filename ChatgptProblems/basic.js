@@ -16,6 +16,8 @@
     console.log(evenOrOdd(9))
 }
 
+// find largest number in an array:
+// Using Reduce()
 {
     function largestNumber(array) {
         return array.reduce((largest, current) => 
@@ -24,6 +26,7 @@
     let array = [100, 400, 51, 399, 511, 20]
     console.log(largestNumber(array))
 }
+// Using Math.max and spread operator
 {
     function largestNumber(array) {
         return Math.max(...array)
@@ -31,6 +34,7 @@
     let array = [12, 32, 64, 19, 94, 10]
     console.log(largestNumber(array))
 }
+// Using for loop
 {
     function largestNumber(array) {
         let largest = array[0]
@@ -44,6 +48,7 @@
     let array = [10, 20, 30, 14, 29, 33, 83]
     console.log(largestNumber(array))
 }
+// Using sort()
 {
     function largestNumber(array) {
         array.sort((a, b) => a - b)
@@ -52,6 +57,7 @@
     let array = [12, 32, 64, 19]
     console.log(largestNumber(array))
 }
+// Using forEach()
 {
     const array = [12, 32, 64, 13, 30, 4, 22]
     let largest = array[0]
@@ -61,4 +67,16 @@
         }
     })
     console.log(`Largest: ${largest}`)
+}
+
+// Reverse a string:
+{
+    let newString = ""
+    function reverseString(string) {
+        for (let i = string.length - 1; i >= 0; i--) {
+            newString += string[i]
+        }
+        return newString
+    }
+    console.log(reverseString("Hello"))
 }
