@@ -44,3 +44,11 @@
     let array = [10, 20, 30, 14, 29, 33, 83]
     console.log(largestNumber(array))
 }
+{
+    function largestNumber(array) {
+        array.sort((a, b) => a - b)
+        return array[array.length - 1]
+    }
+    let array = [12, 32, 64, 19]
+    console.log(largestNumber(array))
+}
