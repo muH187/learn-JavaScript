@@ -149,3 +149,18 @@
     }
     console.log(countVowels("Hello, My name is Muhammad Ali"))
 }
+
+// Find index of an element in array:
+{
+    function findIndex(array, element) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === element) {
+                return i
+            }
+        }
+        return -1
+    }
+    let array = ["Ali", "Bilal", "Pakistan", "Mirza", "Wali", "Umer", "Basit", "USA"] 
+    let element = "Pakistan"
+    console.log(findIndex(array, element))
+}
